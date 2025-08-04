@@ -1,0 +1,677 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-index
+  namespace: nginx
+  labels:
+    app: nginx
+    component: frontend
+    version: v3.0
+  annotations:
+    description: "Multi-page NGINX static site with modern design and full navigation"
+    last-updated: "2025-08-02"
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NGINX on Kubernetes - Home</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">K8s NGINX</span>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="particles" id="particles"></div>
+
+      <main class="main-content">
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="hero-title">Welcome to NGINX on Kubernetes</h1>
+            <p class="hero-subtitle">Experience the power of cloud-native web serving with modern design and scalability</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" onclick="window.location.href='about.html'">Learn More</button>
+              <button class="btn btn-secondary" onclick="window.location.href='dashboard.html'">View Dashboard</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="floating-card">
+              <div class="card-content">
+                <h3>🎯 High Performance</h3>
+                <p>Lightning-fast response times</p>
+              </div>
+            </div>
+            <div class="floating-card" style="animation-delay: 0.5s;">
+              <div class="card-content">
+                <h3>🔧 Scalable</h3>
+                <p>Auto-scaling with Kubernetes</p>
+              </div>
+            </div>
+            <div class="floating-card" style="animation-delay: 1s;">
+              <div class="card-content">
+                <h3>🛡️ Secure</h3>
+                <p>Enterprise-grade security</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized NGINX configuration for maximum performance and minimal response times.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Auto Scaling</h3>
+                <p>Kubernetes horizontal pod autoscaling based on traffic and resource usage.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure by Default</h3>
+                <p>Built-in security headers and best practices for web application protection.</p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Real-time Monitoring</h3>
+                <p>Comprehensive metrics and logging for performance optimization.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats">
+          <div class="container">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number" data-target="99.9">0</div>
+                <div class="stat-label">% Uptime</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="1500">0</div>
+                <div class="stat-label">Requests/min</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">ms Response Time</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="24">0</div>
+                <div class="stat-label">7 Availability</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 NGINX on Kubernetes. Powered by cloud-native technology.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+  about.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About - NGINX on Kubernetes</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">K8s NGINX</span>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="particles" id="particles"></div>
+
+      <main class="main-content">
+        <section class="page-header">
+          <div class="container">
+            <h1 class="page-title">About Our Platform</h1>
+            <p class="page-subtitle">Learn about our cloud-native architecture and technology stack</p>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="container">
+            <div class="content-grid">
+              <div class="content-card">
+                <h2>🏗️ Architecture Overview</h2>
+                <p>Our platform leverages the power of Kubernetes to orchestrate NGINX web servers with unparalleled scalability and reliability. Built on cloud-native principles, we ensure your applications are always available and performant.</p>
+                <ul class="feature-list">
+                  <li>Container-based deployment with Docker</li>
+                  <li>Kubernetes orchestration for high availability</li>
+                  <li>ConfigMap-based configuration management</li>
+                  <li>Ingress controllers for traffic management</li>
+                  <li>Persistent volumes for data storage</li>
+                </ul>
+              </div>
+
+              <div class="content-card">
+                <h2>⚙️ Technology Stack</h2>
+                <div class="tech-stack">
+                  <div class="tech-item">
+                    <div class="tech-icon">🐳</div>
+                    <div class="tech-info">
+                      <h4>Docker</h4>
+                      <p>Containerization platform</p>
+                    </div>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon">☸️</div>
+                    <div class="tech-info">
+                      <h4>Kubernetes</h4>
+                      <p>Container orchestration</p>
+                    </div>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon">🌐</div>
+                    <div class="tech-info">
+                      <h4>NGINX</h4>
+                      <p>High-performance web server</p>
+                    </div>
+                  </div>
+                  <div class="tech-item">
+                    <div class="tech-icon">📊</div>
+                    <div class="tech-info">
+                      <h4>Prometheus</h4>
+                      <p>Monitoring & alerting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="timeline-section">
+          <div class="container">
+            <h2 class="section-title">Development Timeline</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h3>Phase 1: Foundation</h3>
+                  <p>Set up basic Kubernetes cluster and NGINX deployment with ConfigMap configuration.</p>
+                  <span class="timeline-date">Q1 2025</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h3>Phase 2: Enhancement</h3>
+                  <p>Added modern UI, interactive features, and comprehensive monitoring capabilities.</p>
+                  <span class="timeline-date">Q2 2025</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h3>Phase 3: Scaling</h3>
+                  <p>Implemented auto-scaling, load balancing, and multi-region deployment support.</p>
+                  <span class="timeline-date">Q3 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 NGINX on Kubernetes. Powered by cloud-native technology.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+  services.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Services - NGINX on Kubernetes</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">K8s NGINX</span>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="particles" id="particles"></div>
+
+      <main class="main-content">
+        <section class="page-header">
+          <div class="container">
+            <h1 class="page-title">Our Services</h1>
+            <p class="page-subtitle">Comprehensive cloud-native solutions for modern applications</p>
+          </div>
+        </section>
+
+        <section class="services-section">
+          <div class="container">
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>High-Performance Hosting</h3>
+                <p>Lightning-fast NGINX servers optimized for maximum performance and minimal latency.</p>
+                <ul class="service-features">
+                  <li>99.9% uptime guarantee</li>
+                  <li>Global CDN integration</li>
+                  <li>HTTP/2 and HTTP/3 support</li>
+                  <li>Automatic SSL/TLS certificates</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('hosting')">Learn More</button>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>Auto Scaling</h3>
+                <p>Kubernetes-powered automatic scaling based on traffic patterns and resource utilization.</p>
+                <ul class="service-features">
+                  <li>Horizontal pod autoscaling</li>
+                  <li>Vertical pod autoscaling</li>
+                  <li>Custom metrics scaling</li>
+                  <li>Cost optimization</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('scaling')">Learn More</button>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Security & Compliance</h3>
+                <p>Enterprise-grade security with built-in compliance features and threat protection.</p>
+                <ul class="service-features">
+                  <li>WAF protection</li>
+                  <li>DDoS mitigation</li>
+                  <li>Security headers</li>
+                  <li>Compliance reporting</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('security')">Learn More</button>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Monitoring & Analytics</h3>
+                <p>Comprehensive monitoring with real-time metrics, alerts, and performance insights.</p>
+                <ul class="service-features">
+                  <li>Real-time dashboards</li>
+                  <li>Custom alerts</li>
+                  <li>Performance analytics</li>
+                  <li>Log aggregation</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('monitoring')">Learn More</button>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>CI/CD Integration</h3>
+                <p>Seamless integration with your development workflow and deployment pipelines.</p>
+                <ul class="service-features">
+                  <li>GitOps workflows</li>
+                  <li>Automated deployments</li>
+                  <li>Rollback capabilities</li>
+                  <li>Multi-environment support</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('cicd')">Learn More</button>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Global Load Balancing</h3>
+                <p>Intelligent traffic distribution across multiple regions for optimal performance.</p>
+                <ul class="service-features">
+                  <li>Multi-region deployment</li>
+                  <li>Intelligent routing</li>
+                  <li>Health-based failover</li>
+                  <li>Traffic shaping</li>
+                </ul>
+                <button class="btn btn-outline" onclick="showServiceDetails('loadbalancing')">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-section">
+          <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+              <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">$29<span>/month</span></div>
+                <ul class="pricing-features">
+                  <li>Up to 5 applications</li>
+                  <li>Basic monitoring</li>
+                  <li>Email support</li>
+                  <li>99.9% SLA</li>
+                </ul>
+                <button class="btn btn-outline">Get Started</button>
+              </div>
+              <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Professional</h3>
+                <div class="price">$99<span>/month</span></div>
+                <ul class="pricing-features">
+                  <li>Unlimited applications</li>
+                  <li>Advanced monitoring</li>
+                  <li>24/7 support</li>
+                  <li>99.95% SLA</li>
+                  <li>Auto-scaling</li>
+                </ul>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+              <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul class="pricing-features">
+                  <li>Custom solutions</li>
+                  <li>Dedicated support</li>
+                  <li>On-premise options</li>
+                  <li>99.99% SLA</li>
+                  <li>Custom integrations</li>
+                </ul>
+                <button class="btn btn-outline">Contact Sales</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Service Details Modal -->
+      <div class="modal" id="serviceModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 NGINX on Kubernetes. Powered by cloud-native technology.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+  dashboard.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard - NGINX on Kubernetes</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">K8s NGINX</span>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="particles" id="particles"></div>
+
+      <main class="main-content dashboard-main">
+        <section class="dashboard-header">
+          <div class="container">
+            <div class="dashboard-title-section">
+              <h1 class="page-title">System Dashboard</h1>
+              <div class="dashboard-controls">
+                <select class="dashboard-select" id="timeRange">
+                  <option value="1h">Last Hour</option>
+                  <option value="24h" selected>Last 24 Hours</option>
+                  <option value="7d">Last 7 Days</option>
+                  <option value="30d">Last 30 Days</option>
+                </select>
+                <button class="btn btn-small" onclick="refreshDashboard()">🔄 Refresh</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-metrics">
+          <div class="container">
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>System Status</h3>
+                  <div class="status-indicator online"></div>
+                </div>
+                <div class="metric-value">Online</div>
+                <div class="metric-change positive">+0.2% from yesterday</div>
+              </div>
+              
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>Active Pods</h3>
+                  <div class="metric-icon">🔧</div>
+                </div>
+                <div class="metric-value" id="activePods">12</div>
+                <div class="metric-change positive">+2 from last hour</div>
+              </div>
+              
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>Requests/sec</h3>
+                  <div class="metric-icon">📊</div>
+                </div>
+                <div class="metric-value" id="requestsPerSec">1,247</div>
+                <div class="metric-change positive">+15.3% from yesterday</div>
+              </div>
+              
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>Response Time</h3>
+                  <div class="metric-icon">⚡</div>
+                </div>
+                <div class="metric-value" id="responseTime">45ms</div>
+                <div class="metric-change negative">-8ms from yesterday</div>
+              </div>
+              
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>CPU Usage</h3>
+                  <div class="metric-icon">💻</div>
+                </div>
+                <div class="metric-value" id="cpuUsage">68%</div>
+                <div class="metric-change neutral">No change</div>
+              </div>
+              
+              <div class="metric-card">
+                <div class="metric-header">
+                  <h3>Memory Usage</h3>
+                  <div class="metric-icon">🧠</div>
+                </div>
+                <div class="metric-value" id="memoryUsage">42%</div>
+                <div class="metric-change positive">-5% from yesterday</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-charts">
+          <div class="container">
+            <div class="charts-grid">
+              <div class="chart-card">
+                <h3>Traffic Overview</h3>
+                <div class="chart-container">
+                  <canvas id="trafficChart" width="400" height="200"></canvas>
+                </div>
+              </div>
+              
+              <div class="chart-card">
+                <h3>Resource Utilization</h3>
+                <div class="chart-container">
+                  <canvas id="resourceChart" width="400" height="200"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-logs">
+          <div class="container">
+            <div class="logs-section">
+              <div class="logs-header">
+                <h3>System Logs</h3>
+                <div class="logs-controls">
+                  <select class="dashboard-select" id="logLevel">
+                    <option value="all">All Levels</option>
+                    <option value="info">Info</option>
+                    <option value="warning">Warning</option>
+                    <option value="error">Error</option>
+                  </select>
+                </div>
+              </div>
+              <div class="logs-container" id="logsContainer">
+                <div class="log-entry info">
+                  <span class="log-time">2025-08-02 10:30:45</span>
+                  <span class="log-level info">INFO</span>
+                  <span class="log-message">NGINX server started successfully</span>
+                </div>
+                <div class="log-entry success">
+                  <span class="log-time">2025-08-02 10:31:12</span>
+                  <span class="log-level success">SUCCESS</span>
+                  <span class="log-message">Health check passed for all pods</span>
+                </div>
+                <div class="log-entry warning">
+                  <span class="log-time">2025-08-02 10:32:08</span>
+                  <span class="log-level warning">WARNING</span>
+                  <span class="log-message">High memory usage detected on pod nginx-7d4b6c8f9-xyz12</span>
+                </div>
+                <div class="log-entry info">
+                  <span class="log-time">2025-08-02 10:33:21</span>
+                  <span class="log-level info">INFO</span>
+                  <span class="log-message">Auto-scaling triggered: scaling up to 15 pods</span>
+                </div>
+                <div class="log-entry success">
+                  <span class="log-time">2025-08-02 10:34:45</span>
+                  <span class="log-level success">SUCCESS</span>
+                  <span class="log-message">Load balancer configuration updated</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-actions">
+          <div class="container">
+            <div class="actions-grid">
+              <button class="action-btn" onclick="showAlert('Scaling initiated', 'success')">
+                <div class="action-icon">📈</div>
+                <div class="action-text">Scale Up</div>
+              </button>
+              <button class="action-btn" onclick="showAlert('Restart scheduled', 'info')">
+                <div class="action-icon">🔄</div>
+                <div class="action-text">Restart Pods</div>
+              </button>
+              <button class="action-btn" onclick="showAlert('Backup created', 'success')">
+                <div class="action-icon">💾</div>
+                <div class="action-text">Backup Config</div>
+              </button>
+              <button class="action-btn" onclick="showAlert('Logs exported', 'info')">
+                <div class="action-icon">📋</div>
+                <div class="action-text">Export Logs</div>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 NGINX on Kubernetes. Powered by cloud-native technology.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
