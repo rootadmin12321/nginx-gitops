@@ -29,7 +29,1971 @@ data:
             <span class="logo-text">K8s NGINX</span>
           </div>
           <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="particles" id="particles"></div>
+
+      <main class="main-content">
+        <section class="page-header">
+          <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our team for support and inquiries</p>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="container">
+            <div class="contact-grid">
+              <div class="contact-info">
+                <div class="contact-card">
+                  <div class="contact-icon">📧</div>
+                  <h3>Email Support</h3>
+                  <p>support@k8s-nginx.com</p>
+                  <p class="contact-detail">Response time: 2-4 hours</p>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon">💬</div>
+                  <h3>Live Chat</h3>
+                  <p>Available 24/7</p>
+                  <button class="btn btn-primary" onclick="startChat()">Start Chat</button>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon">📞</div>
+                  <h3>Phone Support</h3>
+                  <p>+1 (555) 123-4567</p>
+                  <p class="contact-detail">Mon-Fri: 9AM-6PM EST</p>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon">🏢</div>
+                  <h3>Office</h3>
+                  <p>123 Cloud Street<br>Tech City, TC 12345</p>
+                  <p class="contact-detail">Visit by appointment</p>
+                </div>
+              </div>
+
+              <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                  <h3>Send us a message</h3>
+                  
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="company">Company (Optional)</label>
+                    <input type="text" id="company" name="company">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                      <option value="">Select a subject</option>
+                      <option value="general">General Inquiry</option>
+                      <option value="support">Technical Support</option>
+                      <option value="sales">Sales Question</option>
+                      <option value="billing">Billing Issue</option>
+                      <option value="partnership">Partnership</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                  </div>
+                  
+                  <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="newsletter" name="newsletter">
+                      <span class="checkmark"></span>
+                      Subscribe to our newsletter for updates and tips
+                    </label>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section">
+          <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <h4>How do I get started with NGINX on Kubernetes?</h4>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Getting started is easy! Simply sign up for an account, choose your plan, and follow our step-by-step deployment guide. Our team is available to help you through the process.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <h4>What kind of support do you offer?</h4>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>We offer 24/7 chat support, email support with 2-4 hour response times, and phone support during business hours. Enterprise customers get dedicated support representatives.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <h4>Can I migrate from my existing setup?</h4>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Absolutely! We provide migration tools and services to help you transition from your existing infrastructure to our Kubernetes-based platform with minimal downtime.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <h4>What about security and compliance?</h4>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>Security is our top priority. We provide enterprise-grade security features, regular security updates, and compliance with major standards including SOC 2, GDPR, and HIPAA.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 NGINX on Kubernetes. Powered by cloud-native technology.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+    </html>
+
+  styles.css: |
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Particles Background */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    /* Navigation */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    .logo-icon {
+      margin-right: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #667eea;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #667eea;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background: #333;
+      margin: 3px 0;
+      transition: 0.3s;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-top: 80px;
+      min-height: calc(100vh - 80px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 0;
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+    }
+
+    .hero-content {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 20px;
+    }
+
+    .floating-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      animation: floatCard 3s ease-in-out infinite;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .card-content h3 {
+      color: white;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #667eea;
+      color: #667eea;
+    }
+
+    .btn-outline:hover {
+      background: #667eea;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-small {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 0;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 3rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .feature-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Stats Section */
+    .stats {
+      padding: 4rem 0;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: white;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Page Header */
+    .page-header {
+      padding: 4rem 0 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    .page-title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .page-subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Content Sections */
+    .content-section {
+      padding: 3rem 0;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+    }
+
+    .content-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-card h2 {
+      margin-bottom: 1rem;
+      color: #333;
+      font-size: 1.8rem;
+    }
+
+    .content-card p {
+      color: #666;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: #666;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    /* Tech Stack */
+    .tech-stack {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .tech-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(102, 126, 234, 0.1);
+      border-radius: 10px;
+    }
+
+    .tech-icon {
+      font-size: 2rem;
+    }
+
+    .tech-info h4 {
+      margin-bottom: 0.25rem;
+      color: #333;
+    }
+
+    .tech-info p {
+      color: #666;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* Timeline */
+    .timeline-section {
+      padding: 3rem 0;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.3);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+
+    .timeline-item {
+      padding: 1rem 2rem;
+      position: relative;
+      background: rgba(255, 255, 255, 0.95);
+      margin: 2rem 0;
+      border-radius: 15px;
+      width: 45%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 55%;
+    }
+
+    .timeline-marker {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #667eea;
+      border: 4px solid white;
+      top: 50%;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-marker {
+      right: -35px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-marker {
+      left: -35px;
+    }
+
+    .timeline-content h3 {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-content p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-date {
+      color: #667eea;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* Services */
+    .services-section {
+      padding: 3rem 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .service-card p {
+      color: #666;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-features li {
+      padding: 0.25rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .service-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    /* Pricing */
+    .pricing-section {
+      padding: 4rem 0;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pricing-card.featured {
+      border: 3px solid #667eea;
+      transform: scale(1.05);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #667eea;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #667eea;
+      margin-bottom: 1.5rem;
+    }
+
+    .price span {
+      font-size: 1rem;
+      color: #666;
+      font-weight: normal;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .pricing-features li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: #666;
+    }
+
+    .pricing-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+    }
+
+    .modal-content {
+      background: white;
+      margin: 5% auto;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      animation: modalSlideIn 0.3s ease;
+    }
+
+    @keyframes modalSlideIn {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .close-btn:hover {
+      color: #333;
+    }
+
+    /* Dashboard */
+    .dashboard-main {
+      background: rgba(255, 255, 255, 0.05);
+      min-height: calc(100vh - 80px);
+    }
+
+    .dashboard-header {
+      padding: 2rem 0;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .dashboard-title-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .dashboard-controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .dashboard-select {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    /* Metrics */
+    .dashboard-metrics {
+      padding: 2rem 0;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .metric-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .metric-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .metric-header h3 {
+      color: #333;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .metric-icon {
+      font-size: 1.5rem;
+    }
+
+    .status-indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #4CAF50;
+    }
+
+    .status-indicator.online {
+      background: #4CAF50;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+
+    .metric-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-change {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .metric-change.positive {
+      color: #4CAF50;
+    }
+
+    .metric-change.negative {
+      color: #f44336;
+    }
+
+    .metric-change.neutral {
+      color: #666;
+    }
+
+    /* Charts */
+    .dashboard-charts {
+      padding: 2rem 0;
+    }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+    }
+
+    .chart-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart-card h3 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .chart-container {
+      position: relative;
+      height: 200px;
+    }
+
+    /* Logs */
+    .dashboard-logs {
+      padding: 2rem 0;
+    }
+
+    .logs-section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logs-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .logs-header h3 {
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .logs-container {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem;
+      background: #f8f9fa;
+    }
+
+    .log-entry {
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e0e0e0;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+
+    .log-entry:last-child {
+      border-bottom: none;
+    }
+
+    .log-time {
+      color: #666;
+      min-width: 140px;
+    }
+
+    .log-level {
+      min-width: 80px;
+      font-weight: bold;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    .log-level.info {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+
+    .log-level.success {
+      background: #e8f5e8;
+      color: #2e7d32;
+    }
+
+    .log-level.warning {
+      background: #fff3e0;
+      color: #f57c00;
+    }
+
+    .log-level.error {
+      background: #ffebee;
+      color: #d32f2f;
+    }
+
+    .log-message {
+      color: #333;
+      flex: 1;
+    }
+
+    /* Dashboard Actions */
+    .dashboard-actions {
+      padding: 2rem 0;
+    }
+
+    .actions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .action-btn {
+      background: rgba(255, 255, 255, 0.95);
+      border: none;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .action-icon {
+      font-size: 2rem;
+    }
+
+    .action-text {
+      color: #333;
+      font-weight: 600;
+    }
+
+    /* Contact Page */
+    .contact-section {
+      padding: 3rem 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .contact-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-card h3 {
+      color: #333;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .contact-card p {
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-detail {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Contact Form */
+    .contact-form-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      width: auto;
+      margin: 0;
+    }
+
+    /* FAQ */
+    .faq-section {
+      padding: 4rem 0;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .faq-grid {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1rem;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-question {
+      padding: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background: rgba(102, 126, 234, 0.05);
+    }
+
+    .faq-question h4 {
+      color: #333;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      color: #667eea;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding: 0 1.5rem 1.5rem;
+    }
+
+    .faq-answer p {
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+
+    .footer p {
+      margin: 0;
+      opacity: 0.8;
+    }
+
+    /* Alert System */
+    .alert {
+      position: fixed;
+      top: 100px;
+      right: 20px;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      z-index: 2000;
+      animation: slideInRight 0.3s ease;
+      max-width: 300px;
+    }
+
+    .alert.success {
+      background: #4CAF50;
+    }
+
+    .alert.info {
+      background: #2196F3;
+    }
+
+    .alert.warning {
+      background: #FF9800;
+    }
+
+    .alert.error {
+      background: #f44336;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+      }
+
+      .nav-menu.active {
+        left: 0;
+      }
+
+      .nav-menu li {
+        margin: 1rem 0;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-visual {
+        margin-top: 2rem;
+      }
+
+      .floating-card {
+        max-width: 250px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 3rem;
+      }
+
+      .timeline-marker {
+        left: 10px !important;
+        right: auto !important;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .dashboard-title-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .charts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .chart-container {
+        height: 250px;
+      }
+
+      .pricing-card.featured {
+        transform: none;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .floating-card {
+        max-width: 200px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .page-title {
+        font-size: 2.5rem;
+      }
+
+      .actions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form-container {
+        padding: 1.5rem;
+      }
+
+      .alert {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+      }
+    }
+
+  script.js: |
+    // Particle system
+    function createParticles() {
+      const particlesContainer = document.getElementById('particles');
+      if (!particlesContainer) return;
+
+      const particleCount = 50;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        // Random size
+        const size = Math.random() * 4 + 2;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        
+        // Random position
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        
+        // Random animation delay
+        particle.style.animationDelay = Math.random() * 6 + 's';
+        particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
+
+    // Mobile navigation
+    function initMobileNav() {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          });
+        });
+      }
+    }
+
+    // Counter animation
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      
+      counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const increment = target / 200;
+        let current = 0;
+        
+        const updateCounter = () => {
+          if (current < target) {
+            current += increment;
+            counter.textContent = Math.ceil(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+        
+        // Start animation when element is visible
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              updateCounter();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        
+        observer.observe(counter);
+      });
+    }
+
+    // Service details modal
+    function showServiceDetails(service) {
+      const modal = document.getElementById('serviceModal');
+      const modalContent = document.getElementById('modalContent');
+      
+      const serviceDetails = {
+        hosting: {
+          title: 'High-Performance Hosting',
+          content: `
+            <h2>🚀 High-Performance Hosting</h2>
+            <p>Our hosting solution leverages NGINX's powerful capabilities combined with Kubernetes orchestration to deliver unmatched performance and reliability.</p>
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Ultra-fast response times with optimized NGINX configuration</li>
+              <li>Global CDN integration for worldwide content delivery</li>
+              <li>HTTP/2 and HTTP/3 support for modern web standards</li>
+              <li>Automatic SSL/TLS certificate management</li>
+              <li>Advanced caching mechanisms</li>
+              <li>Real-time performance monitoring</li>
+            </ul>
+            <h3>Performance Metrics:</h3>
+            <ul>
+              <li>Average response time: &lt;50ms</li>
+              <li>99.9% uptime guarantee</li>
+              <li>Handle 10,000+ concurrent connections</li>
+              <li>Global edge locations for optimal performance</li>
+            </ul>
+          `
+        },
+        scaling: {
+          title: 'Auto Scaling',
+          content: `
+            <h2>📈 Auto Scaling</h2>
+            <p>Intelligent scaling powered by Kubernetes that automatically adjusts your infrastructure based on real-time demand.</p>
+            <h3>Scaling Features:</h3>
+            <ul>
+              <li>Horizontal Pod Autoscaling (HPA) based on CPU/memory usage</li>
+              <li>Vertical Pod Autoscaling (VPA) for optimal resource allocation</li>
+              <li>Custom metrics scaling using Prometheus</li>
+              <li>Predictive scaling based on traffic patterns</li>
+              <li>Multi-zone deployment for high availability</li>
+              <li>Cost optimization through intelligent resource management</li>
+            </ul>
+            <h3>Benefits:</h3>
+            <ul>
+              <li>Handle traffic spikes automatically</li>
+              <li>Reduce costs during low-traffic periods</li>
+              <li>Maintain consistent performance</li>
+              <li>Zero-downtime scaling operations</li>
+            </ul>
+          `
+        },
+        security: {
+          title: 'Security & Compliance',
+          content: `
+            <h2>🛡️ Security & Compliance</h2>
+            <p>Enterprise-grade security features designed to protect your applications and data while maintaining compliance standards.</p>
+            <h3>Security Features:</h3>
+            <ul>
+              <li>Web Application Firewall (WAF) protection</li>
+              <li>DDoS mitigation and rate limiting</li>
+              <li>Security headers and OWASP compliance</li>
+              <li>Network policies and pod security standards</li>
+              <li>Encrypted communication (TLS 1.3)</li>
+              <li>Regular security updates and patching</li>
+            </ul>
+            <h3>Compliance Standards:</h3>
+            <ul>
+              <li>SOC 2 Type II certified</li>
+              <li>GDPR compliant data handling</li>
+              <li>HIPAA compliance available</li>
+              <li>PCI DSS Level 1 compliance</li>
+              <li>Regular penetration testing</li>
+            </ul>
+          `
+        },
+        monitoring: {
+          title: 'Monitoring & Analytics',
+          content: `
+            <h2>📊 Monitoring & Analytics</h2>
+            <p>Comprehensive monitoring solution providing deep insights into your application performance and user behavior.</p>
+            <h3>Monitoring Capabilities:</h3>
+            <ul>
+              <li>Real-time performance dashboards</li>
+              <li>Custom alerting with multiple channels</li>
+              <li>Distributed tracing for request flows</li>
+              <li>Log aggregation and analysis</li>
+              <li>Application Performance Monitoring (APM)</li>
+              <li>Infrastructure monitoring</li>
+            </ul>
+            <h3>Analytics Features:</h3>
+            <ul>
+              <li>Traffic analysis and user behavior insights</li>
+              <li>Performance bottleneck identification</li>
+              <li>Capacity planning recommendations</li>
+              <li>SLA reporting and compliance tracking</li>
+              <li>Custom metrics and KPI tracking</li>
+            </ul>
+          `
+        },
+        cicd: {
+          title: 'CI/CD Integration',
+          content: `
+            <h2>🔄 CI/CD Integration</h2>
+            <p>Seamless integration with your development workflow enabling rapid, reliable deployments with full automation.</p>
+            <h3>CI/CD Features:</h3>
+            <ul>
+              <li>GitOps workflows with automated deployments</li>
+              <li>Multi-environment deployment pipelines</li>
+              <li>Blue-green and canary deployment strategies</li>
+              <li>Automatic rollback capabilities</li>
+              <li>Integration with popular CI/CD tools</li>
+              <li>Container image scanning and vulnerability assessment</li>
+            </ul>
+            <h3>Supported Platforms:</h3>
+            <ul>
+              <li>GitHub Actions</li>
+              <li>GitLab CI/CD</li>
+              <li>Jenkins</li>
+              <li>Azure DevOps</li>
+              <li>CircleCI</li>
+              <li>Custom webhook integrations</li>
+            </ul>
+          `
+        },
+        loadbalancing: {
+          title: 'Global Load Balancing',
+          content: `
+            <h2>🌐 Global Load Balancing</h2>
+            <p>Intelligent traffic distribution across multiple regions and availability zones for optimal performance and reliability.</p>
+            <h3>Load Balancing Features:</h3>
+            <ul>
+              <li>Multi-region deployment with intelligent routing</li>
+              <li>Health-based automatic failover</li>
+              <li>Geographic routing for optimal latency</li>
+              <li>Weighted routing for gradual rollouts</li>
+              <li>Session affinity and sticky sessions</li>
+              <li>Traffic shaping and rate limiting</li>
+            </ul>
+            <h3>Global Infrastructure:</h3>
+            <ul>
+              <li>15+ global regions</li>
+              <li>50+ edge locations</li>
+              <li>Multi-cloud deployment options</li>
+              <li>Automatic cross-region replication</li>
+              <li>Disaster recovery automation</li>
+            </ul>
+          `
+        }
+      };
+      
+      if (serviceDetails[service] && modal && modalContent) {
+        modalContent.innerHTML = serviceDetails[service].content;
+        modal.style.display = 'block';
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('serviceModal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    // Dashboard functionality
+    function refreshDashboard() {
+      showAlert('Dashboard refreshed successfully', 'success');
+      
+      // Simulate data refresh
+      const metrics = {
+        activePods: Math.floor(Math.random() * 5) + 10,
+        requestsPerSec: Math.floor(Math.random() * 500) + 1000,
+        responseTime: Math.floor(Math.random() * 20) + 30,
+        cpuUsage: Math.floor(Math.random() * 30) + 50,
+        memoryUsage: Math.floor(Math.random() * 40) + 30
+      };
+      
+      Object.keys(metrics).forEach(key => {
+        const element = document.getElementById(key);
+        if (element) {
+          element.textContent = key === 'responseTime' ? metrics[key] + 'ms' : 
+                               key.includes('Usage') ? metrics[key] + '%' : 
+                               metrics[key].toLocaleString();
+        }
+      });
+      
+      updateCharts();
+    }
+
+    function updateCharts() {
+      // Simulate chart updates
+      const trafficChart = document.getElementById('trafficChart');
+      const resourceChart = document.getElementById('resourceChart');
+      
+      if (trafficChart) {
+        drawSimpleChart(trafficChart, 'Traffic', '#667eea');
+      }
+      
+      if (resourceChart) {
+        drawSimpleChart(resourceChart, 'Resources', '#764ba2');
+      }
+    }
+
+    function drawSimpleChart(canvas, title, color) {
+      const ctx = canvas.getContext('2d');
+      const width = canvas.width;
+      const height = canvas.height;
+      
+      // Clear canvas
+      ctx.clearRect(0, 0, width, height);
+      
+      // Generate sample data
+      const dataPoints = 24;
+      const data = Array.from({length: dataPoints}, () => Math.random() * 100);
+      
+      // Draw axes
+      ctx.strokeStyle = '#e0e0e0';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(40, height - 40);
+      ctx.lineTo(width - 20, height - 40);
+      ctx.moveTo(40, 20);
+      ctx.lineTo(40, height - 40);
+      ctx.stroke();
+      
+      // Draw data line
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      
+      const stepX = (width - 60) / (dataPoints - 1);
+      const stepY = (height - 60) / 100;
+      
+      data.forEach((value, index) => {
+        const x = 40 + index * stepX;
+        const y = height - 40 - value * stepY;
+        
+        if (index === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      });
+      
+      ctx.stroke();
+      
+      // Draw title
+      ctx.fillStyle = '#333';
+      ctx.font = '14px Arial';
+      ctx.fillText(title + ' Overview', 10, 15);
+    }
+
+    // Contact form
+    function initContactForm() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Simulate form submission
+          const formData = new FormData(contactForm);
+          const data = Object.fromEntries(formData);
+          
+          console.log('Form submitted:', data);
+          showAlert('Message sent successfully! We\'ll get back to you soon.', 'success');
+          
+          // Reset form
+          contactForm.reset();
+        });
+      }
+    }
+
+    // FAQ functionality
+    function toggleFaq(element) {
+      const faqItem = element.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Open clicked item if it wasn't active
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    }
+
+    // Live chat simulation
+    function startChat() {
+      showAlert('Connecting to live chat...', 'info');
+      setTimeout(() => {
+        showAlert('Chat support is currently offline. Please use our contact form.', 'warning');
+      }, 2000);
+    }
+
+    // Alert system
+    function showAlert(message, type = 'info') {
+      const alert = document.createElement('div');
+      alert.className = `alert ${type}`;
+      alert.textContent = message;
+      
+      document.body.appendChild(alert);
+      
+      // Remove alert after 5 seconds
+      setTimeout(() => {
+        alert.style.animation = 'slideOutRight 0.3s ease forwards';
+        setTimeout(() => {
+          if (alert.parentNode) {
+            alert.parentNode.removeChild(alert);
+          }
+        }, 300);
+      }, 5000);
+    }
+
+    // Initialize everything when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      createParticles();
+      initMobileNav();
+      animateCounters();
+      initContactForm();
+      
+      // Initialize dashboard if on dashboard page
+      if (document.querySelector('.dashboard-main')) {
+        updateCharts();
+      }
+      
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        const modal = document.getElementById('serviceModal');
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+      
+      // Handle log filtering
+      const logLevelSelect = document.getElementById('logLevel');
+      if (logLevelSelect) {
+        logLevelSelect.addEventListener('change', function() {
+          const selectedLevel = this.value;
+          const logEntries = document.querySelectorAll('.log-entry');
+          
+          logEntries.forEach(entry => {
+            if (selectedLevel === 'all') {
+              entry.style.display = 'flex';
+            } else {
+              const levelElement = entry.querySelector('.log-level');
+              if (levelElement && levelElement.classList.contains(selectedLevel)) {
+                entry.style.display = 'flex';
+              } else {
+                entry.style.display = 'none';
+              }
+            }
+          });
+        });
+      }
+      
+      // Add animation delay to floating cards
+      const floatingCards = document.querySelectorAll('.floating-card');
+      floatingCards.forEach((card, index) => {
+        card.style.animationDelay = (index * 0.5) + 's';
+      });
+      
+      console.log('NGINX on Kubernetes - Application loaded successfully! 🚀');
+    });
+
+    // Add slideout animation for alerts
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideOutRight {
+        from {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+      ="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
             <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
